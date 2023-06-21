@@ -58,7 +58,7 @@ class DiagLteLogParser:
             0xB0C2: lambda x, y, z: self.parse_lte_rrc_cell_info(x, y, z), # LTE RRC Serving Cell Info
 
             # LTE CA COMBOS
-            # 0xB0CD: lambda x, y, z: self.parse_cacombos(x, y, z),
+            0xB0CD: lambda x, y, z: self.parse_cacombos(x, y, z),
 
             # LTE NAS
             0xB0E0: lambda x, y, z: self.parse_lte_nas(x, y, z, False), # NAS ESM RX Enc
